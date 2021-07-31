@@ -1,0 +1,102 @@
+Navigation - React Native.
+This is a simple way to create a navigation for navigating from one page to another page.
+
+A- Create a expo  project, expo init project
+
+B- Run these commands.
+1- expo install @react-navigation/native
+2- expo install react-native-gesture-handler
+3- expo install react-native-reanimated
+4- expo install react-native-screens
+5- expo install react-native-safe-area-context
+6- expo install @react-native-community/masked-view
+7- expo install @react-navigation/stack
+
+
+C- Create a folder, name it screens
+Create another three folder and files
+- screens/Home/index.js
+- screens/Start/index.js
+- screens/About/index.js
+
+D- All the pages....
+ 
+/////************App.js*********************
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import StartScreen from './screens/Start';
+import HomeScreen from './screens/Home';
+import AboutScreen from './screens/About';
+
+const RootStack = createStackNavigator();
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <RootStack.Navigator>
+        <RootStack.Screen name="Start" component={StartScreen} />
+        <RootStack.Screen name="Home" component={HomeScreen} />
+        <RootStack.Screen name="About" component={AboutScreen} />
+      </RootStack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+export default App;
+
+
+/////**********Start/index.js********
+import React from 'react';
+import { View, Text, Button, StyleSheet } from 'react-native';
+const StartScreen = ({ navigation }) => {
+  return (
+    <View>
+      <Text> First page</Text>
+      <Button title="HOME" onPress={() => navigation.navigate('Home')}  /> <br />
+      <Button title="ABOUT" onPress={() => navigation.navigate('About')}
+      />
+    </View>
+  );
+};
+
+export default StartScreen;
+
+
+/////**********Home/index.js********
+import React from 'react';
+import { View, Text, StyleSheet } from 'react-native';
+
+const HomeScreen = () => {
+  return (
+    <View>
+      <Text> HOME-SCREEN </Text>
+    </View>
+  );
+};
+export default HomeScreen;
+
+
+
+
+/////**********About/index.js********
+import React from 'react';
+import { View, Text, Button, StyleSheet } from 'react-native';
+const AboutScreen = ({ navigation }) => {
+  return (
+    <View>
+      <Text> ABOUT-SCREEN </Text>
+      <Button
+        title="ABOUT"
+        onPress={() => navigation.navigate('Home')}
+      />
+    </View>
+  );
+};
+
+export default AboutScreen;
+
+// That is it...
+
+
