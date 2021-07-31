@@ -101,3 +101,8 @@ export default AboutScreen;
 // That is it...
 
 
+
+For tailwind
+********npm i tailwind-react-native-classnames****************
+npm i tailwind-react-native-classnames
+https://www.npmjs.com/package/tailwind-react-native-classnames
