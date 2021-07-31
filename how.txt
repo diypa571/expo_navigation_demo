@@ -1,7 +1,8 @@
 Navigation - React Native.
-This is a simple way to create a navigation for navigating from one page to another page.
+This is a simple way to create a navigation for navigating from one page to another.
 
-A- Create a expo  project, expo init project
+A- Create an expo  project, expo init project
+
 
 B- Run these commands.
 1- expo install @react-navigation/native
