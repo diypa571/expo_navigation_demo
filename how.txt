@@ -14,7 +14,8 @@ B- Run these commands.
 7- expo install @react-navigation/stack
 
 for draw...
-include expo install @react-navigation/drawer
+include
+expo install @react-navigation/drawer
 
 
 C- Create a folder, name it screens
