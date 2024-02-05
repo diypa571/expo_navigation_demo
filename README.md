@@ -1,19 +1,19 @@
 
-  861  npx create-expo-app livia
-  862  ls
+  npx create-expo-app livia
+  
 
   
-  863  cd livia/
+  cd livia/
 
 
-    865  npm install
+  npm install
 
     
-  864  npx expo install react-dom react-native-web @expo/webpack-config
+  npx expo install react-dom react-native-web @expo/webpack-config
   
 
   
-  866  npx expo install react-dom react-native-web @expo/webpack-config
+  npx expo install react-dom react-native-web @expo/webpack-config
   
-  867  npx expo start
+  npx expo start
 
